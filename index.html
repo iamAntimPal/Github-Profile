@@ -18,7 +18,7 @@
   
 </head>
 <body>
-  <!-- Chat Widget (Placeholder for ChatGPT Integration) -->
+  <!-- Chat Widget (Placeholder for ChatGPT Integration)
   <div id="chatWidget">
     <div id="chatHeader">Chat with me</div>
     <div id="chatBody">
@@ -28,7 +28,7 @@
       <input type="text" id="chatInput" placeholder="Type your question..." />
       <button id="chatSend">Send</button>
     </div>
-  </div>
+  </div> -->
   
   <!-- Main Container: Left Sidebar and Main Content -->
   <div class="container">
@@ -130,7 +130,7 @@
       </nav>
       <!-- ===== Banner Sections (Full Width Banners) ===== -->
       <div class="banner">
-        <!-- <img src="./image/hello.gif" alt="Welcome Banner" style="width: 100%;" /> -->
+        <img src="./image/hello.gif" alt="Welcome Banner" style="width: 100%;" />
       </div>
       <div class="banner">
         <img src="./image/banner.png" style="width: 100%;" alt="Second Banner" class="profile-image" />
@@ -539,15 +539,19 @@
 
 
 
-  <div id="chatWidget">
-    <div id="chatHeader" style="background-color: #238636; padding: 10px; text-align: center; font-weight: bold; cursor: pointer;">Chat with me</div>
-    <div id="chatBody" style="flex: 1; padding: 10px; overflow-y: auto;">
-      <p style="text-align:center; font-size:14px;">Welcome! Ask me anything.</p>
-    </div>
-    <div id="chatInputContainer" style="display: flex; border-top: 1px solid #333;">
-      <input type="text" id="chatInput" placeholder="Type your question..." style="flex:1; padding:8px; border:none; outline:none;" />
-      <button id="chatSend" style="padding:8px; background-color: #238636; border:none; cursor:pointer; color:#fff;">Send</button>
-    </div>
+  
+<!-- Modal Structure -->
+<div id="chatModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Contact Me</h2>
+    <form id="chatForm">
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="^\+?\d{10,12}$" title="Enter a valid phone number" required>
+      <textarea id="question" name="question" placeholder="Your Question" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
   </div>
 </body>
 </html>
