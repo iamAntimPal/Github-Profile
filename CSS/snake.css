@@ -1,0 +1,13 @@
+.snake {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 1000px;
+}
+
+.snake-img {
+     width: 1000pxx;
+     max-width: 800px;
+     /* Increase or adjust as needed */
+     height: auto;
+}
