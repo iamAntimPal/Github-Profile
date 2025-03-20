@@ -1,7 +1,12 @@
 // Replace with your actual YouTube API key
     const API_KEY = "YOUR_API_KEY";
     // Array of video IDs to display
-    const videoIDs = ["SKgahaGHtlI", "hUe1iD5rpno", "4Bub9PwFRXU", "xL85kMWcbJM"];
+  //  const videoIDs = ["SKgahaGHtlI", "hUe1iD5rpno", "4Bub9PwFRXU", "xL85kMWcbJM"];
+   // Updated array: Now displaying 6 videos
+    const videoIDs = [
+        "SKgahaGHtlI", "hUe1iD5rpno", "4Bub9PwFRXU", 
+        "xL85kMWcbJM", "8Jl5pT4oJw8", "Zq3gkVxokH0"
+    ];
     const videosGrid = document.getElementById("videos-grid");
 
     // Fetch video details from YouTube Data API

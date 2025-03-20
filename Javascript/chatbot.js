@@ -1,53 +1,39 @@
- // Initialize EmailJS with your public API key (User ID)
-  (function(){
-    emailjs.init("qg0frkxEtvXp1k6Pe");
-  })();
+// Initialize EmailJS
+(function() {
+  emailjs.init("qg0frkxEtvXp1k6Pe"); // Replace with your EmailJS User ID
+})();
 
-  // Get modal elements
-  var modal = document.getElementById("chatModal");
-  var trigger = document.getElementById("chatTrigger");
-  var closeBtn = document.getElementsByClassName("close")[0];
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
 
-  // Open the modal when trigger is clicked
-  trigger.addEventListener("click", function() {
-    modal.style.display = "block";
-  });
+  // Form values
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+  let message = document.getElementById("message").value;
 
-  // Close the modal when the close button is clicked
-  closeBtn.addEventListener("click", function() {
-    modal.style.display = "none";
-  });
+  // Validate Email Format
+  let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if (!email.match(emailPattern)) {
+    alert("Please enter a valid email address!");
+    return;
+  }
 
-  // Close the modal when clicking outside the modal content
-  window.addEventListener("click", function(event) {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
+  // EmailJS parameters
+  let templateParams = {
+    user_name: name,
+    user_email: email,
+    user_phone: phone,
+    user_message: message
+  };
 
-  // Form submission: Validate data and send email using EmailJS
-  document.getElementById("chatForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    // HTML5 input validations will run automatically.
-    var emailField = document.getElementById("email").value;
-    var phoneField = document.getElementById("phone").value;
-    var questionField = document.getElementById("question").value;
-
-    var templateParams = {
-      from_email: emailField,
-      phone: phoneField,
-      question: questionField
-    };
-
-    // Send the email using EmailJS
-    emailjs.send("service_tt37xg6", "service_tt37xg6", templateParams)
-      .then(function(response) {
-        alert("Your message has been sent successfully!");
-        document.getElementById("chatForm").reset();
-        modal.style.display = "none";
-      }, function(error) {
-        alert("Failed to send message. Please try again later.");
-        console.error("EmailJS error:", error);
-      });
-  });
+  // Send email via EmailJS
+  emailjs.send("service_tt37xg6", "template_xxx", templateParams)
+    .then(function(response) {
+      alert("Message sent successfully!");
+      document.getElementById("contactForm").reset();
+    }, function(error) {
+      alert("Failed to send message. Please try again later.");
+      console.error("EmailJS Error:", error);
+    });
+});
