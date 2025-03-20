@@ -32,7 +32,7 @@ body {
 }
 
 /* ===== Container Layout ===== */
-.container {
+.container1 {
      display: flex;
      width: 100%;
      /* Changed from 90% to fill full width */
@@ -367,9 +367,9 @@ section {
           margin-left: 0;
      }
 
-     .container {
+     /* .container1 {
           flex-direction: column;
-     }
+     } */
 }
 
 /* ===== Chat Widget Styles (Placeholder for ChatGPT Integration) ===== */
