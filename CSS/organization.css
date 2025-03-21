@@ -1,14 +1,15 @@
 /* Organization Styling */
 
 .organization-section {
-     position: fixed;
-     left: 20px;
-     top: 150px;
+     position: relative;
+     left: 50px;
+     top: 20px;
      width: 250px;
      background-color: #161b22;
      padding: 15px;
+     ali
      border-radius: 10px;
-     text-align: center;
+     /* text-align: center; */
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
