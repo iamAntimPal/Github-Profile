@@ -1,4 +1,4 @@
 *.html linguist-language=HTML
 *.css linguist-language=CSS
 *.js linguist-language=JavaScript
-* linguist-detectable=false
+*.md linguist-detectable=false
