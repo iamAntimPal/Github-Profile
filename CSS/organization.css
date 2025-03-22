@@ -1,22 +1,20 @@
 /* Organization Styling */
 
 .organization-section {
-     position: relative;
-     top: 20px;
+     position: relative; /* position the section header in the section */ 
      width: 250px;
      background-color: #161b22;
-     padding: 15px;
-     ali
+     /* padding: 15px; */
      border-radius: 10px;
      /* text-align: center; */
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-.org-container {
+/* .org-container {
      display: flex;
      flex-direction: column;
      align-items: center;
-}
+} */
 
 .org-logo {
      width: 80px;
