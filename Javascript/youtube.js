@@ -5,7 +5,7 @@
    // Updated array: Now displaying 6 videos
     const videoIDs = [
         "SKgahaGHtlI", "hUe1iD5rpno", "4Bub9PwFRXU", 
-        "xL85kMWcbJM", "8Jl5pT4oJw8", "Zq3gkVxokH0"
+        "xL85kMWcbJM", "SKgahaGHtlI", "hUe1iD5rpno"
     ];
     const videosGrid = document.getElementById("videos-grid");
 
