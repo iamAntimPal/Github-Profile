@@ -47,6 +47,7 @@ The page is fully responsive and designed to provide a professional and engaging
 ---
 
 ## Folder Structure
+```
 📁 GitHub Profile/
 ├── index.html                🌐 Main HTML entry point
 ├── README.md                 📘 Project overview
@@ -90,7 +91,7 @@ The page is fully responsive and designed to provide a professional and engaging
     ├── check.html            ✅ HTML preview/testing
     ├── readme2.md            📘 Draft README
     └── readmeupdate.md       🔁 Updates & logs
-
+```
 
 ### Key Files
 
