@@ -1,11 +1,23 @@
-/* Dynamic Repos Script */
+/* Dynamic Repos Script with Authentication and Debugging */
 
 document.addEventListener("DOMContentLoaded", async () => {
       const username = "iamAntimPal";
       const repoContainer = document.getElementById("repos-container");
+      const token = "YOUR_PERSONAL_ACCESS_TOKEN"; // Replace with your GitHub personal access token
+
       try {
-        const response = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`);
+        const response = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`, {
+          headers: {
+            Authorization: `token ${token}`
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error(`GitHub API error: ${response.status} ${response.statusText}`);
+        }
+
         const repos = await response.json();
+        console.log("Fetched Repositories:", repos); // Debugging log
 
         // Filter out forked repos (optional) and sort by sum of stars and forks
         const originalRepos = repos.filter(repo => !repo.fork);

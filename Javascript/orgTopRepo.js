@@ -1,12 +1,22 @@
-// Organization Top Repositories Script
+// Organization Top Repositories Script with Authentication and Pagination Handling
 
 async function fetchOrganizationTopRepos() {
   const orgName = "Optimism-Educators";
   const orgRepoContainer = document.getElementById("org-repos-container");
+  const token = "YOUR_PERSONAL_ACCESS_TOKEN"; // Replace with your GitHub personal access token
 
   try {
     // Fetch organization repositories
-    const response = await fetch(`https://api.github.com/orgs/${orgName}/repos?per_page=100`);
+    const response = await fetch(`https://api.github.com/orgs/${orgName}/repos?per_page=100`, {
+      headers: {
+        Authorization: `token ${token}`
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error(`GitHub API error: ${response.status} ${response.statusText}`);
+    }
+
     const repos = await response.json();
 
     // Filter out forked repos and sort by stars, forks, commits, and pull requests
@@ -14,18 +24,13 @@ async function fetchOrganizationTopRepos() {
 
     // Fetch additional data (commits and pull requests) for each repo
     const repoDataPromises = originalRepos.map(async (repo) => {
-      const [commitsResponse, pullsResponse] = await Promise.all([
-        fetch(repo.commits_url.replace("{/sha}", "")),
-        fetch(repo.pulls_url.replace("{/number}", ""))
-      ]);
-
-      const commits = await commitsResponse.json();
-      const pulls = await pullsResponse.json();
+      const commitsCount = await fetchAllPages(repo.commits_url.replace("{/sha}", ""), token);
+      const pullsCount = await fetchAllPages(repo.pulls_url.replace("{/number}", ""), token);
 
       return {
         ...repo,
-        commits_count: commits.length,
-        pulls_count: pulls.length
+        commits_count: commitsCount,
+        pulls_count: pullsCount
       };
     });
 
@@ -61,6 +66,37 @@ async function fetchOrganizationTopRepos() {
     console.error("Error fetching organization repositories:", error);
     orgRepoContainer.innerHTML = "<p>Failed to load organization repositories.</p>";
   }
+}
+
+// Helper function to fetch all pages of a paginated API endpoint
+async function fetchAllPages(url, token) {
+  let page = 1;
+  let totalCount = 0;
+
+  while (url) {
+    const response = await fetch(`${url}?page=${page}&per_page=100`, {
+      headers: {
+        Authorization: `token ${token}`
+      }
+    });
+
+    if (!response.ok) {
+      console.error(`Error fetching data from ${url}: ${response.status} ${response.statusText}`);
+      break;
+    }
+
+    const data = await response.json();
+    totalCount += data.length;
+
+    // Check if there are more pages
+    if (data.length < 100) {
+      break;
+    }
+
+    page++;
+  }
+
+  return totalCount;
 }
 
 // Call the function on DOMContentLoaded

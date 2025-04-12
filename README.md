@@ -6,14 +6,19 @@ Welcome to the **GitHub Profile Repository**! This repository contains the sourc
 
 ## Table of Contents
 
-1. [About the Project](#about-the-project)
-2. [Features](#features)
-3. [Folder Structure](#folder-structure)
-4. [Technologies Used](#technologies-used)
-5. [How to Use](#how-to-use)
-6. [Screenshots](#screenshots)
-7. [Contributing](#contributing)
-8. [License](#license)
+- [GitHub Profile Repository](#github-profile-repository)
+  - [Table of Contents](#table-of-contents)
+  - [About the Project](#about-the-project)
+  - [Features](#features)
+  - [Folder Structure](#folder-structure)
+    - [Key Files](#key-files)
+  - [Technologies Used](#technologies-used)
+  - [How to Use](#how-to-use)
+  - [Screenshots](#screenshots)
+    - [Profile Page](#profile-page)
+    - [Top Repositories Section](#top-repositories-section)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ---
 
@@ -47,40 +52,40 @@ The page is fully responsive and designed to provide a professional and engaging
 index.html
 README.md
 CSS/
-    about.css
-    contact.css
-    graph.css
-    profile-graph.css
-    Responsive.css
-    skills.css
-    stats.css
-    style.css
-    Toprepo.css
-    youtube.css
+    about.css           📝
+    contact.css         📞
+    graph.css           📊
+    profile-graph.css   📈
+    Responsive.css      📱
+    skills.css          💼
+    stats.css           📉
+    style.css           🎨
+    Toprepo.css         🔝
+    youtube.css         🎥
 git/
-    github.png
-    glaxy brain.png
-    pair.jpeg
-    pull shark.jpeg
-    QuickDraw.png
-    ridal.png
-    star.png
-    yolo.jpeg
+    github.png          🐙
+    galaxy-brain.png    🧠
+    pair-programming.jpeg 🤝
+    pull-request-shark.jpeg 🦈
+    QuickDraw.png       🖌️
+    ridal.png           🎨
+    star.png            ⭐
+    yolo.jpeg           🕶️
 image/
-    Antim_pal.png
-    banner.png
-    hot.gif
-    welcome-header.gif
+    Antim_pal.png       👤
+    banner.png          🌟
+    hot.gif             🔥
+    welcome-header.gif  🎉
 Javascript/
     main.js
     nav.js
     orgTopRepo.js
-    toprpo.js
+    topRepo.js
     youtube.js
 profile/
     check.html
     readme2.md
-    readmeupdat.md
+    readmeupdate.md
 ```
 
 ### Key Files
