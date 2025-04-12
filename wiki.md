@@ -6,14 +6,22 @@ Welcome to the **GitHub Profile Repository Wiki**! This wiki serves as a compreh
 
 ## Table of Contents
 
-- [About the Project](#about-the-project)
-- [Features](#features)
-- [Folder Structure](#folder-structure)
-- [Technologies Used](#technologies-used)
-- [How to Use](#how-to-use)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
+- [GitHub Profile Repository Wiki](#github-profile-repository-wiki)
+  - [Table of Contents](#table-of-contents)
+  - [About the Project](#about-the-project)
+  - [Features](#features)
+  - [Folder Structure](#folder-structure)
+  - [Technologies Used](#technologies-used)
+  - [How to Use](#how-to-use)
+  - [Screenshots](#screenshots)
+    - [Profile Page](#profile-page)
+    - [Top Repositories Section](#top-repositories-section)
+    - [GitHub Stats Section](#github-stats-section)
+    - [Skills Section](#skills-section)
+    - [Contact Section](#contact-section)
+  - [](#)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ---
 
@@ -110,11 +118,21 @@ The page is fully responsive and designed to provide a professional and engaging
 ## Screenshots
 
 ### Profile Page
-![Profile Page](image/banner.png)
+![Profile Page](./image/screenshot/main.png)
 
 ### Top Repositories Section
-![Top Repositories](image/welcome-header.gif)
+![Top Repositories](./image/screenshot/toprepo.png)
 
+### GitHub Stats Section
+![GitHub Stats](./image/screenshot/stats.png)
+
+### Skills Section
+![Skills Section](./image/screenshot/tech.png)
+
+### Contact Section
+![Contact Section](./image/screenshot/about.png)
+
+![Contact Section](./image/screenshot/leetcode.png)
 ---
 
 ## Contributing
