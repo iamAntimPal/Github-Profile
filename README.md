@@ -91,45 +91,6 @@ The page is fully responsive and designed to provide a professional and engaging
     ├── readme2.md            📘 Draft README
     └── readmeupdate.md       🔁 Updates & logs
 
-```
-index.html
-README.md
-CSS/
-    about.css           📝
-    contact.css         📞
-    graph.css           📊
-    profile-graph.css   📈
-    Responsive.css      📱
-    skills.css          💼
-    stats.css           📉
-    style.css           🎨
-    Toprepo.css         🔝
-    youtube.css         🎥
-git/
-    github.png          🐙
-    galaxy-brain.png    🧠
-    pair-programming.jpeg 🤝
-    pull-request-shark.jpeg 🦈
-    QuickDraw.png       🖌️
-    ridal.png           🎨
-    star.png            ⭐
-    yolo.jpeg           🕶️
-image/
-    Antim_pal.png       👤
-    banner.png          🌟
-    hot.gif             🔥
-    welcome-header.gif  🎉
-Javascript/
-    main.js
-    nav.js
-    orgTopRepo.js
-    topRepo.js
-    youtube.js
-profile/
-    check.html
-    readme2.md
-    readmeupdate.md
-```
 
 ### Key Files
 
