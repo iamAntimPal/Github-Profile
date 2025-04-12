@@ -6,7 +6,7 @@
 <div align="center">
   
   <!-- GitHub Stats Card - Customized -->
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=koushik369mondal&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&card_width=450&ring_color=91bfff&text_color=9f9f9f&icon_color=91bfff&title_color=91bfff" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=iamAntimPal&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&card_width=450&ring_color=91bfff&text_color=9f9f9f&icon_color=91bfff&title_color=91bfff" />
   
   <!-- Improved Languages Card with better visualization -->
    <!-- <img height="180em" src="https://api.githubtrends.io/user/svg/koushik369mondal/langs?time_range=one_year&theme=tokyonight&include_private=true&compact=true&loc_metric=changed" /> -->
