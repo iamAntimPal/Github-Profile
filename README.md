@@ -47,6 +47,49 @@ The page is fully responsive and designed to provide a professional and engaging
 ---
 
 ## Folder Structure
+📁 GitHub Profile/
+├── index.html                🌐 Main HTML entry point
+├── README.md                 📘 Project overview
+
+├── CSS/                      🎨 All styling files
+│   ├── about.css             📝 Personal/About section
+│   ├── contact.css           📞 Contact form styling
+│   ├── graph.css             📊 GitHub graph styles
+│   ├── profile-graph.css     📈 Profile contribution graph
+│   ├── Responsive.css        📱 Mobile responsiveness
+│   ├── skills.css            💼 Skills section
+│   ├── stats.css             📉 Stats and metrics
+│   ├── style.css             🎨 Main/global styles
+│   ├── Toprepo.css           🔝 Top repos display
+│   └── youtube.css           🎥 YouTube integration
+
+├── git/                      🖼️ GitHub-themed icons & memes
+│   ├── github.png            🐙 GitHub logo
+│   ├── galaxy-brain.png      🧠 Galaxy brain meme
+│   ├── pair-programming.jpeg 🤝 Pair programming image
+│   ├── pull-request-shark.jpeg 🦈 Pull request shark
+│   ├── QuickDraw.png         🖌️ Quick Draw artwork
+│   ├── ridal.png             🎨 Custom graphic
+│   ├── star.png              ⭐ Star icon
+│   └── yolo.jpeg             🕶️ YOLO meme
+
+├── image/                    🖼️ UI images and GIFs
+│   ├── Antim_pal.png         👤 Profile image
+│   ├── banner.png            🌟 Profile banner
+│   ├── hot.gif               🔥 Highlight animation
+│   └── welcome-header.gif    🎉 Welcome header GIF
+
+├── Javascript/               ⚙️ Functionality & interactivity
+│   ├── main.js               🔧 Main functionality
+│   ├── nav.js                🧭 Navigation logic
+│   ├── orgTopRepo.js         🏢 Organization's top repos
+│   ├── topRepo.js            📂 General top repos
+│   └── youtube.js            📺 YouTube API integration
+
+└── profile/                  📄 Experimental or alternate content
+    ├── check.html            ✅ HTML preview/testing
+    ├── readme2.md            📘 Draft README
+    └── readmeupdate.md       🔁 Updates & logs
 
 ```
 index.html
