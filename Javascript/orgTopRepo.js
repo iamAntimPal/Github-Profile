@@ -101,3 +101,5 @@ async function fetchAllPages(url, token) {
 
 // Call the function on DOMContentLoaded
 document.addEventListener("DOMContentLoaded", fetchOrganizationTopRepos);
+
+// Helper function to fetch all pages of a paginated API endpoint
