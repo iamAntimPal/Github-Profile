@@ -47,7 +47,7 @@ The page is fully responsive and designed to provide a professional and engaging
 ---
 
 ## Folder Structure
-```
+```rb
 📁 GitHub Profile/
 ├── index.html                🌐 Main HTML entry point
 ├── README.md                 📘 Project overview
