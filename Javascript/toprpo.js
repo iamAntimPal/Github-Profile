@@ -66,3 +66,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     repoContainer.innerHTML = "<p>Failed to load repositories.</p>";
   }
 });
+

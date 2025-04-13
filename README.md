@@ -1,3 +1,4 @@
+
 # GitHub Profile Repository
 
 Welcome to the **GitHub Profile Repository**! This repository contains the source code and assets for creating a dynamic and visually appealing GitHub profile page. The project is designed to showcase your GitHub stats, top repositories, skills, and more in an interactive and responsive way.
@@ -143,3 +144,6 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+=======
+![LeetCode Card](https://leetcard.jacoblin.cool/antim_pal?theme=unicorn&font=Sora&ext=activity)
+<img src="https://leetcard.jacoblin.cool/antim_pal?theme=unicorn&font=Sora&ext=activity" alt="LeetCode />

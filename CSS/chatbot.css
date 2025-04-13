@@ -1,0 +1,58 @@
+/* Contact Section */
+#contact {
+     background-color: #0d1117;
+     color: #c9d1d9;
+     padding: 60px 20px;
+     text-align: center;
+}
+
+.container {
+     max-width: 600px;
+     margin: auto;
+}
+
+h2 {
+     font-size: 2em;
+     margin-bottom: 10px;
+}
+
+p {
+     font-size: 1.2em;
+     margin-bottom: 20px;
+}
+
+.input-group {
+     margin-bottom: 15px;
+}
+
+input,
+textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #30363d;
+     border-radius: 5px;
+     background: #161b22;
+     color: #c9d1d9;
+}
+
+button {
+     background-color: #238636;
+     color: white;
+     padding: 12px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     width: 100%;
+     font-size: 1em;
+}
+
+button:hover {
+     background-color: #2ea043;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+     h2 {
+          font-size: 1.5em;
+     }
+}

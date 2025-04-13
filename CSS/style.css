@@ -212,6 +212,9 @@ body {
      flex-wrap: wrap;
      gap: 15px;
      margin-bottom: 20px;
+     background-color: #161b22;
+     border-radius: 10px !important;
+     
 }
 
 .menu a {
