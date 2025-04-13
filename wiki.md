@@ -1,23 +1,25 @@
+# GitHub Profile Repository Wiki
 
-# GitHub Profile Repository
-
-Welcome to the **GitHub Profile Repository**! This repository contains the source code and assets for creating a dynamic and visually appealing GitHub profile page. The project is designed to showcase your GitHub stats, top repositories, skills, and more in an interactive and responsive way.
+Welcome to the **GitHub Profile Repository Wiki**! This wiki serves as a comprehensive guide to understanding, using, and contributing to the GitHub Profile Repository. Below, you'll find detailed information about the project, its features, and how to get started.
 
 ---
 
 ## Table of Contents
 
-- [GitHub Profile Repository](#github-profile-repository)
+- [GitHub Profile Repository Wiki](#github-profile-repository-wiki)
   - [Table of Contents](#table-of-contents)
   - [About the Project](#about-the-project)
   - [Features](#features)
   - [Folder Structure](#folder-structure)
-    - [Key Files](#key-files)
   - [Technologies Used](#technologies-used)
   - [How to Use](#how-to-use)
   - [Screenshots](#screenshots)
     - [Profile Page](#profile-page)
     - [Top Repositories Section](#top-repositories-section)
+    - [GitHub Stats Section](#github-stats-section)
+    - [Skills Section](#skills-section)
+    - [Contact Section](#contact-section)
+  - [](#)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -48,11 +50,11 @@ The page is fully responsive and designed to provide a professional and engaging
 ---
 
 ## Folder Structure
-```rb
+
+```plaintext
 📁 GitHub Profile/
 ├── index.html                🌐 Main HTML entry point
 ├── README.md                 📘 Project overview
-
 ├── CSS/                      🎨 All styling files
 │   ├── about.css             📝 Personal/About section
 │   ├── contact.css           📞 Contact form styling
@@ -64,7 +66,6 @@ The page is fully responsive and designed to provide a professional and engaging
 │   ├── style.css             🎨 Main/global styles
 │   ├── Toprepo.css           🔝 Top repos display
 │   └── youtube.css           🎥 YouTube integration
-
 ├── git/                      🖼️ GitHub-themed icons & memes
 │   ├── github.png            🐙 GitHub logo
 │   ├── galaxy-brain.png      🧠 Galaxy brain meme
@@ -74,33 +75,22 @@ The page is fully responsive and designed to provide a professional and engaging
 │   ├── ridal.png             🎨 Custom graphic
 │   ├── star.png              ⭐ Star icon
 │   └── yolo.jpeg             🕶️ YOLO meme
-
 ├── image/                    🖼️ UI images and GIFs
 │   ├── Antim_pal.png         👤 Profile image
 │   ├── banner.png            🌟 Profile banner
 │   ├── hot.gif               🔥 Highlight animation
 │   └── welcome-header.gif    🎉 Welcome header GIF
-
 ├── Javascript/               ⚙️ Functionality & interactivity
 │   ├── main.js               🔧 Main functionality
 │   ├── nav.js                🧭 Navigation logic
 │   ├── orgTopRepo.js         🏢 Organization's top repos
 │   ├── topRepo.js            📂 General top repos
 │   └── youtube.js            📺 YouTube API integration
-
 └── profile/                  📄 Experimental or alternate content
     ├── check.html            ✅ HTML preview/testing
     ├── readme2.md            📘 Draft README
     └── readmeupdate.md       🔁 Updates & logs
 ```
-
-### Key Files
-
-- **index.html**: Main HTML file for the profile page.
-- **CSS/**: Contains all the stylesheets for different sections of the page.
-- **Javascript/**: Contains JavaScript files for dynamic data fetching and interactivity.
-- **image/**: Stores images used in the profile page.
-- **git/**: Contains achievement badges and icons.
 
 ---
 
@@ -128,11 +118,21 @@ The page is fully responsive and designed to provide a professional and engaging
 ## Screenshots
 
 ### Profile Page
-![Profile Page](image/banner.png)
+![Profile Page](./image/screenshot/main.png)
 
 ### Top Repositories Section
-![Top Repositories](image/welcome-header.gif)
+![Top Repositories](./image/screenshot/toprepo.png)
 
+### GitHub Stats Section
+![GitHub Stats](./image/screenshot/stats.png)
+
+### Skills Section
+![Skills Section](./image/screenshot/tech.png)
+
+### Contact Section
+![Contact Section](./image/screenshot/about.png)
+
+![Contact Section](./image/screenshot/leetcode.png)
 ---
 
 ## Contributing
@@ -144,6 +144,3 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-=======
-![LeetCode Card](https://leetcard.jacoblin.cool/antim_pal?theme=unicorn&font=Sora&ext=activity)
-<img src="https://leetcard.jacoblin.cool/antim_pal?theme=unicorn&font=Sora&ext=activity" alt="LeetCode />
