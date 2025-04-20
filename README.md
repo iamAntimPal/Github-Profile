@@ -3,7 +3,12 @@
 
 Welcome to the **GitHub Profile Repository**! This repository contains the source code and assets for creating a dynamic and visually appealing GitHub profile page. The project is designed to showcase your GitHub stats, top repositories, skills, and more in an interactive and responsive way.
 
+[![Antim_Pal's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=Antim_Pal)](https://github.com/anuraghazra/github-readme-stats)
+
+[![My WakaTime Stats](https://github-readme-stats.vercel.app/api/wakatime?username=Antim_Pal&layout=compact&langs_count=6)](https://wakatime.com/@Antim_Pal)
+
 ---
+
 
 ## Table of Contents
 
