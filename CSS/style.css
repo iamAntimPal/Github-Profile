@@ -214,7 +214,11 @@ body {
      margin-bottom: 20px;
      background-color: #161b22;
      border-radius: 10px !important;
-     
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+     background-color: #fff; /* Ensure the menu has a background color */
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
 }
 
 .menu a {
@@ -224,11 +228,17 @@ body {
      padding: 10px 15px;
      border-radius: 5px;
      transition: background-color 0.3s, color 0.3s;
+     text-decoration: none;
+     color: #333;
+     padding: 10px 15px;
+     display: inline-block;
 }
 
 .menu a:hover {
      background-color: #238636;
      color: #fff;
+     background-color: #f0f0f0;
+     color: #000;
 }
 
 /* ===== Sections Styling ===== */
