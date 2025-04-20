@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
 
       // Save counts on the repo object and calculate a combined score
-      repo.pr_count = prCount;
-      repo.issue_count = issueCount;
-      repo.score = repo.stargazers_count + repo.forks_count + repo.issue_count + repo.pr_count;
+      repo.pr_count = prCount || 0;
+      repo.issue_count = issueCount || 0;
+      repo.score = (repo.stargazers_count || 0) + (repo.forks_count || 0) + repo.issue_count + repo.pr_count;
       return repo;
     }));
 

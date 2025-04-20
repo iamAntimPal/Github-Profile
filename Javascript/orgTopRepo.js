@@ -24,8 +24,8 @@ async function fetchOrganizationTopRepos() {
 
     // Fetch additional data (commits and pull requests) for each repo
     const repoDataPromises = originalRepos.map(async (repo) => {
-      const commitsCount = await fetchAllPages(repo.commits_url.replace("{/sha}", ""), token);
-      const pullsCount = await fetchAllPages(repo.pulls_url.replace("{/number}", ""), token);
+      const commitsCount = await fetchAllPages(repo.commits_url.replace("{/sha}", ""), token) || 0;
+      const pullsCount = await fetchAllPages(repo.pulls_url.replace("{/number}", ""), token) || 0;
 
       return {
         ...repo,
@@ -39,8 +39,8 @@ async function fetchOrganizationTopRepos() {
     // Sort by stars, forks, commits, and pull requests
     enrichedRepos.sort((a, b) => {
       return (
-        (b.stargazers_count + b.forks_count + b.commits_count + b.pulls_count) -
-        (a.stargazers_count + a.forks_count + a.commits_count + a.pulls_count)
+        ((b.stargazers_count || 0) + (b.forks_count || 0) + b.commits_count + b.pulls_count) -
+        ((a.stargazers_count || 0) + (a.forks_count || 0) + a.commits_count + a.pulls_count)
       );
     });
 
@@ -101,5 +101,3 @@ async function fetchAllPages(url, token) {
 
 // Call the function on DOMContentLoaded
 document.addEventListener("DOMContentLoaded", fetchOrganizationTopRepos);
-
-// Helper function to fetch all pages of a paginated API endpoint
